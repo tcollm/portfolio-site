@@ -1,0 +1,56 @@
+:root {
+  --black: black;
+  --white: white;
+  --orange: #f18f01;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--white);
+  background-color: var(--black);
+  /* TODO: get roboto font from Google */
+  font-family: roboto;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 15px;
+  background-color: var(--black);
+  z-index: 1000;
+}
+
+.page-container {
+  /* TODO: calc a margin top (I don't like 
+  using specific px values */
+  margin-top: 82px;
+  position: relative;
+}
+
+section {
+  padding: 20px;
+  border: 2px solid green;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+header {
+  color: var(--orange);
+  font-size: 2rem;
+}
+
+.body {
+  font-size: 1.2rem;
+}
